@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev's Form Validation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<form novalidate>
+    <p>
+    <label for="mail">
+        <span>Please provide an email Address</span>
+        <input type="email" id="mail" name="mail" required minlength="8"/>
+        <span class="error" aria-live="polite"></span>
+    </label>
+    </p>
+    <p>
+    <label for="ZIP">
+        <span>Please provide a ZIP code</span>
+        <input type="text" id="ZIP" name="ZIP" required/>
+        <span class="error" aria-live="polite"></span>
+    </label>
+
+    </p>
+    <p>
+        <label for="country">
+            <span>Country:</span>
+        </label>
+        <select name="country" id="country">
+            <option value="USA">USA</option>
+            <option value="DE">Germany</option>
+            <option value="FR">France</option>
+        </select>
+    </p>
+
+    <label for="password">
+        <span>Password:</span>
+        <input type="text" id="password" name="password" required/>
+        <span class="error" aria-live="polite"></span>
+    </label>
+    <label for="confirmPassword">
+        <span>Confirm Password:</span>
+        <input type="text" id="confirmPassword" name="confirmPassword" required/>
+        <span class="error" aria-live="polite"></span>
+    </label>
+</p>
+
+    <button>Submit</button>
+</form>
+
+
+
+
+    
+</body>
+</html>
